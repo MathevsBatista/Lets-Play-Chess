@@ -1,6 +1,5 @@
 package Application;
 
-import BoardLayer.Board;
 import ChessLayer.ChessPiece;
 
 public class UI {
@@ -10,10 +9,9 @@ public class UI {
             for(int j = 0; j < pieces[i].length; j++){
                 printPiece(pieces[i][j]);
             }
+            System.out.println();
         }
-        for (int i = 0; i < pieces[0].length; i++) {
-            System.out.println("  a b c d e f g h");
-        }
+        System.out.println("  a b c d e f g h");
     }
 
     public static void printPiece(ChessPiece piece) {
